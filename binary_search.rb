@@ -7,7 +7,7 @@ def binary_search(array, number)
   while min <= max
   # if the number is not in the array, eventually min will be greater than max
   #which will break loop
-  index_guess = (min + ((max - min) / 2)).floor # the average of min and max
+  index_guess = (min + ((max - min) / 2)).floor # the average of min and max rounded down
     if array[index_guess] == number
       return "#{number} is in this array in index position #{index_guess}."
     elsif array[index_guess] > number
